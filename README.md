@@ -9,14 +9,14 @@ eid-mw-sdk-python is licensed under the terms of the [GPLv3](https://www.gnu.org
 See the LICENSE file for the full text of the license.
 
 Any suggestions or improvements are welcome.  
-Send them to vincent.hardy.be@gmail.com  
+Send them to vincent.hardy@linuxunderground.be
 
 Homepage: https://github.com/linuxunderground/eid-mw-sdk-python
 
 
 ## PyKCS11
 
-You will find PyKCS11 at https://pypi.python.org/pypi/pykcs11  
+You will find PyKCS11 at https://pypi.org/project/PyKCS11/
   
 Gentoo users can easily install PyKCS11 with the ebuild available at the
 [linuxunderground overlay](https://github.com/linuxunderground/gentoo.overlay/tree/master/dev-python/PyKCS11).  

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2017 Vincent Hardy (vincent.hardy.be@gmail.com)
+# Copyright (C) 2017-2019 Vincent Hardy (vincent.hardy@linuxunderground.be)
 #
 # This is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License version
@@ -48,9 +48,10 @@ if __name__ == '__main__':
     beid = getData()
     beid.getInfo()
 
-    slots = beid.pkcs11.getSlotList()
-    
+    slots = beid.pkcs11.getSlotList(tokenPresent=True)
+
     if len(slots) == 0:
+        print("Token not found.")
         sys.exit(2)
 
     for slot in slots:
