@@ -34,6 +34,11 @@ class getData(object):
         print('======================================================')
         print()
 
+    def getTokenInfo(self,slot):
+        print(self.pkcs11.getTokenInfo(slot))
+        print('======================================================')
+        print()
+
     def getData(self, slot, name):
         session = self.pkcs11.openSession(slot)
         o = session.findObjects([(CKA_CLASS, CKO_DATA), (CKA_LABEL, name)])[0]        
@@ -56,6 +61,7 @@ if __name__ == '__main__':
 
     for slot in slots:
         try:
+            beid.getTokenInfo(slot)
             beid.getData(slot, 'surname')
             beid.getData(slot, 'firstnames')
         except PyKCS11.PyKCS11Error as e:
