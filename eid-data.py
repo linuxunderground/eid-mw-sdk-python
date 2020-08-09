@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2017-2019 Vincent Hardy (vincent.hardy@linuxunderground.be)
+# Copyright (C) 2017-2020 Vincent Hardy (vincent.hardy@linuxunderground.be)
 #
 # This is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License version
